@@ -1,0 +1,7 @@
+setxkbmap -layout de -variant nodeadkeys -option terminate:ctrl_alt_bksp &
+xinput --set-prop "SynPS/2 Synaptics TouchPad" 'libinput Accel Speed' 0.4
+xinput --set-prop "TPPS/2 Elan TrackPoint" 'libinput Accel Speed' 0.8
+
+### AutoStart
+SpiderOakONE &
+chrome &

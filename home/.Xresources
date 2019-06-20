@@ -1,0 +1,127 @@
+!------------------------------------------------------------------------------
+! c o l o r -  s e t t i n g s
+
+! Base16 Zenburn
+! Scheme: elnawe
+
+#define base00 #3f3f3f
+#define base01 #404040
+#define base02 #606060
+#define base03 #4f4f4f
+#define base04 #808080
+#define base05 #dcdccc
+#define base06 #c0c0c0
+#define base07 #ffffff
+#define base08 #dca3a3
+#define base09 #dfaf8f
+#define base0A #e0cf9f
+#define base0B #5f7f5f
+#define base0C #93e0e3
+#define base0D #7cb8bb
+#define base0E #dc8cc3
+#define base0F #000000
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base08
+*color10:      base0B
+*color11:      base0A
+*color12:      base0D
+*color13:      base0E
+*color14:      base0C
+*color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*color16:      base09
+*color17:      base0F
+*color18:      base01
+*color19:      base02
+*color20:      base04
+*color21:      base06
+
+!! ! Zenburn color-scheme
+!! URxvt*background: #3F3F3F
+!! URxvt*foreground: #DCDCCC
+!! URxvt*cursorColor: #DCDCCC
+!! URxvt*cursorColor2: #FFFFEF
+!! URxvt*colorUL: #8CD0D3
+!! URxvt*underlineColor: #F0DFAF
+!! URxvt*colorBD: #E0CF9F
+!! URxvt*colorIT: #656555
+!! 
+!! !! black dark/light
+!! URxvt*color0: #3F3F3F
+!! URxvt*color8: #5F5F5F
+!! !! red dark/light
+!! URxvt*color1: #BC8383
+!! URxvt*color9: #CC9393
+!! !! green dark/light
+!! URxvt*color2: #5F7F5F
+!! URxvt*color10: #7F9F7F
+!! !! yellow dark/light
+!! URxvt*color3: #E0CF9F
+!! URxvt*color11: #F0DFAF
+!! !! blue dark/light
+!! URxvt*color4: #7CB8BB
+!! URxvt*color12: #8CD0D3
+!! !! magenta dark/light
+!! URxvt*color5: #DC8CC3
+!! URxvt*color13: #DC8CC3
+!! !! cyan dark/light
+!! URxvt*color6: #93E0E3
+!! URxvt*color14: #93E0E3
+!! !! white dark/light
+!! URxvt*color7: #DCDCCC
+!! URxvt*color15: #FFFFFF
+
+
+!------------------------------------------------------------------------------
+! font hinting
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+
+Xft.dpi: 120
+!------------------------------------------------------------------------------
+! u r x v t
+
+URxvt*geometry:           112x22
+URxvt*font:               xft:xos4 Terminus:size=12
+URxvt*urlLauncher:        firefox
+URxvt*scrollBar:          false
+URxvt*scrollBar_right:    true
+URxvt*scrollColor:        #000000
+URxvt*termName:           rxvt-256color
+Urxvt*loginShell:         true
+Urxvt*scrollTtyOutput:    false
+URxvt*scrollWithBuffer:   true
+URxvt*scrollTtyKeypress:  true
+URxvt*saveLines:          10000
+URxvt*depth:              24
+*utf8:1
+
+! Tabs
+
+URxvt.perl-ext-common:  default,tabbed
+
